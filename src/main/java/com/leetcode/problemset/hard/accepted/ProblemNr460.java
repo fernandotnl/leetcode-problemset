@@ -1,4 +1,4 @@
-package com.leetcode.problemset.hard;
+package com.leetcode.problemset.hard.accepted;
 
 import com.leetcode.support.LFUCache;
 
