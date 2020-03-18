@@ -1,6 +1,8 @@
 package com.leetcode.problemset.medium.accepted;
 
 
+import static com.leetcode.support.Helper.printMatrix;
+
 public class ProblemNr48 {
     //https://leetcode.com/problems/rotate-image/
     public static void rotate(int[][] matrix) {
@@ -65,16 +67,6 @@ public class ProblemNr48 {
         printMatrix(matrix1);
         rotate(matrix1);
         printMatrix(matrix1);
-    }
-
-    public static void printMatrix(int[][] matrix){
-        System.out.println("Matrix:");
-        for(int i=0; i<matrix.length; i++){
-            for(int j=0; j<matrix.length; j++){
-                System.out.print(" "+matrix[i][j]);
-            }
-            System.out.println();
-        }
     }
 
 }

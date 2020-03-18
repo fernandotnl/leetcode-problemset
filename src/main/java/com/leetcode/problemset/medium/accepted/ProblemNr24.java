@@ -2,6 +2,8 @@ package com.leetcode.problemset.medium.accepted;
 
 import com.leetcode.support.ListNode;
 
+import static com.leetcode.support.Helper.printList;
+
 public class ProblemNr24 {
 
     //https://leetcode.com/problems/swap-nodes-in-pairs
@@ -65,22 +67,5 @@ public class ProblemNr24 {
         ListNode list = i1;
 
         printList(swapPairs(list));
-    }
-
-    public static void printList(ListNode l1){
-        System.out.println();
-        if(l1 == null){
-            System.out.println("null");
-            return;
-        }
-        ListNode aux = l1;
-        do {
-            System.out.print(String.format("%s -> ", aux.val));
-            aux = aux.next;
-        } while(aux != null && aux.next != null);
-        if (aux != null) {
-            System.out.print(String.format("%s", aux.val));
-        }
-
     }
 }

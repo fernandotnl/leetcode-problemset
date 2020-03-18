@@ -3,6 +3,8 @@ package com.leetcode.problemset.medium.accepted;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.leetcode.support.Helper.printMatrix;
+
 public class ProblemNr54 {
 
     //https://leetcode.com/problems/spiral-matrix/
@@ -87,16 +89,6 @@ public class ProblemNr54 {
 
         printMatrix(matrix4);
         System.out.println(spiralOrder(matrix4));
-    }
-
-    public static void printMatrix(int[][] matrix){
-        System.out.println("Matrix:");
-        for(int i=0; i<matrix.length; i++){
-            for(int j=0; j<matrix[0].length; j++){
-                System.out.print(" "+matrix[i][j]);
-            }
-            System.out.println();
-        }
     }
 
 }

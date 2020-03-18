@@ -9,13 +9,6 @@ public class CombinationIterator {
     int current = 0;
     List<String> listCombinations = new ArrayList<>();
 
-    private String addZeros(StringBuilder sb){
-        for(int i=0; characters.length() - sb.length()>0 ; i++){
-            sb.insert(0,"0");
-        }
-        return sb.toString();
-    }
-
     private int sum(String binary){
         int sum =0;
         for(int i=0; i<binary.length(); i++){
@@ -27,10 +20,10 @@ public class CombinationIterator {
     public CombinationIterator(String characters, int combinationLength) {
         this.characters = characters;
         this.combinationLength = combinationLength;
-        int max = (int) Math.pow(2, characters.length());
-        for(int i=max-1; i>0; i--){
-            StringBuilder sb = new StringBuilder(Integer.toBinaryString(i));
-            String binary = addZeros(sb);
+        int start = (int) Math.pow(2, characters.length());
+        int end = (int) Math.pow(2, characters.length() +1);
+        for(int i=end-1; i>=start; i--){
+            String binary = Integer.toBinaryString(i).substring(1);
             if (sum(binary) == combinationLength) {
                 listCombinations.add(binary);
             }

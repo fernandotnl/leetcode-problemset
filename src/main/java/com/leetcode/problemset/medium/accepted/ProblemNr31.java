@@ -30,6 +30,7 @@ public class ProblemNr31 {
         nums[i] = nums[j];
         nums[j] = aux;
     }
+
     public static void main(String args[]) throws Exception {
         int[] nums = {1,2,3};
         nextPermutation(nums);

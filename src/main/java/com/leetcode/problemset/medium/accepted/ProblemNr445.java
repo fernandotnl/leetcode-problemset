@@ -4,6 +4,8 @@ import com.leetcode.support.ListNode;
 
 import java.util.Stack;
 
+import static com.leetcode.support.Helper.printList;
+
 public class ProblemNr445 {
 
     //https://leetcode.com/problems/add-two-numbers-ii/
@@ -79,17 +81,6 @@ public class ProblemNr445 {
         printList(l1);
         printList(l2);
         printList(addTwoNumbers(l1,l2));
-
-    }
-
-    public static void printList(ListNode l1){
-        System.out.println();
-        ListNode aux = l1;
-        do {
-            System.out.print(String.format("%s -> ", aux.val));
-            aux = aux.next;
-        } while(aux.next != null);
-        System.out.print(String.format("%s", aux.val));
 
     }
 }

@@ -1,6 +1,5 @@
 package com.leetcode.problemset.medium.accepted;
 
-
 public class ProblemNr62 {
 
     //https://leetcode.com/problems/unique-paths/
@@ -11,7 +10,7 @@ public class ProblemNr62 {
         int[][] matrix = new int[m][n];
         for(int row=maxRow; row>=0; row--){
             for(int col=maxCol; col>=0; col--){
-                if(col == maxCol && row == maxRow) continue;
+                if(col == maxCol && row == maxRow){}
                 else if(col == maxCol || row == maxRow) matrix[row][col] = 1;
                 else matrix[row][col] = matrix[row][col+1] + matrix[row+1][col];
             }

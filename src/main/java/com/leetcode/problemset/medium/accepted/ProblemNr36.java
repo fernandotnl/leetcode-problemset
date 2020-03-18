@@ -1,11 +1,7 @@
 package com.leetcode.problemset.medium.accepted;
 
-import org.omg.PortableServer.LIFESPAN_POLICY_ID;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ProblemNr36 {
 
