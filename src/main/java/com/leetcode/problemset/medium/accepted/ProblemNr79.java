@@ -1,4 +1,4 @@
-package com.leetcode.problemset.medium.in_progress;
+package com.leetcode.problemset.medium.accepted;
 
 public class ProblemNr79 {
 
